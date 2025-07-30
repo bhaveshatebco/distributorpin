@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Distributor Network Map</title>
+    <base target="_blank">
+    <style>
+        body {
+            text-align: center;
+            font-family: Tahoma, Geneva, Verdana, system-ui;
+            background-color: #f9f9f9;
+        }
+
+        .map-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .pin-wrapper {
+            position: absolute;
+            width: 18px;
+            height: 25px;
+            overflow: visible;
+        }
+
+        .pin-wrapper a {
+            display: inline-block;
+            width: 18px;
+            height: 25px;
+            font-size: 0;
+        }
+
+        .pin-wrapper::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 5px;
+            background: #333;
+            color: #fff;
+            padding: 8px 9px;
+            font-size: 12px;
+            border-radius: 4px;
+            white-space: nowrap;
+            display: none;
+            pointer-events: none;
+        }
+
+        .pin-wrapper:hover::after {
+            display: block;
+        }
+
+        .pin-wrapper a {
+            display: inline-block;
+            width: 18px;
+            height: 25px;
+        }
+
+        .pin-wrapper:hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        <h2>Ebco Distribution Network</h2>
+    </div> -->
+
+    <div class="map-container">
+        <img src="Distributor-Network-1080p.png" alt="Distributor Map">
+        <div class="pin-wrapper" style="top: 85px; left: 299px;" data-tooltip="Srinagar Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 192px; left: 350px;" data-tooltip="Parwanoo Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 220px; left: 282px;" data-tooltip="Ludhiana Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 315px; left: 352px;" data-tooltip="Ghaziabad Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 410px; left: 918px;" data-tooltip="Guwahati Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 421px; left: 443px;" data-tooltip="Lucknow Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 430px; left: 228px;" data-tooltip="Jodhpur Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 468px; left: 677px;" data-tooltip="Patna Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 538px; left: 143px;" data-tooltip="Ahmedabad Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 586px; left: 316px;" data-tooltip="Indore Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 547px; left: 638px;" data-tooltip="Ranchi Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 638px; left: 625px;" data-tooltip="Bhubaneshwar Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 590px; left: 526px;" data-tooltip="Raipur Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 627px; left: 407px;" data-tooltip="Nagpur Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 666px; left: 314px;" data-tooltip="Akola Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 686px; left: 217px;" data-tooltip="Nasik Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 650px; left: 164px;" data-tooltip="Surat Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 729px; left: 160px;" data-tooltip="Mumbai Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 771px; left: 198px;" data-tooltip="Pune Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 821px; left: 185px;" data-tooltip="Kolhapur Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 876px; left: 189px;" data-tooltip="Goa Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 851px; left: 258px;" data-tooltip="Hubli Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 812px; left: 364px;" data-tooltip="Hyderabad Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 901px; left: 240px;" data-tooltip="Shimoga Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 954px; left: 215px;" data-tooltip="Mangalore Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 554px; left: 723px;" data-tooltip="Kolkata Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 996px; left: 414px;" data-tooltip="Chennai Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 965px; left: 310px;" data-tooltip="Bangalore Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 1008px; left: 278px;" data-tooltip="Mysore Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 1049px; left: 259px;" data-tooltip="Calicut Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 1100px; left: 281px;" data-tooltip="Kochi Distributor"><a href=""></a></div>
+        <div class="pin-wrapper" style="top: 1039px; left: 342px;" data-tooltip="Coimbatore Distributor"><a href=""></a></div>
+    </div>
+</body>
+
+</html>
